@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Lusitana:wght@400;700&family=Noto+Sans+TC&family=Roboto&display=swap" rel="stylesheet">
     <title>My weather App</title>
 </head>
 <body>
-    <header><form><input type="search" placeholder="Enter a city..." required><input type="submit" value="search"></form></header>
+    <div class="main-content">
+    <header><form><input type="search" placeholder="Enter a city..." required class="search-input" ><input type="submit" value="search" class="submit-input"></form></header>
     <main>
+        <div class="app-data">
         <div>
-            <h1>Johannesburg</h1>
-            <p>Monday 12:24, Moderate rain</p>
+            <h1 class="weather-city">Johannesburg</h1>
+            <p class="weather-details">Monday 12:24, Moderate rain
             <br/>
-            <p>Humidity:87%, Wind:7.2km/h</p>
+            Humidity:<strong>87%</strong>, Wind:<strong>7.2km/h</strong></p>
         </div>
-        <div>
-            ☀️24℃
+        <div class="weather-temperature-container">
+           <div class="weather-icon">☀️</div>
+           <div class="temperature-value">24</div>
+           <div class="weather-unit">℃</div>
         </div>
+    </div>
     </main>
    
 </body>
 <footer>This app was coded by <a href="" target="_blank">Philile Gumede</a> and it is on<a href="" target="_blank">Github</a> hosted by <a href="" target="_blank">Netlify</a></footer>
+</div>
 </html>
